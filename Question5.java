@@ -2,6 +2,28 @@ import java.util.Scanner;
 
 public class Question5
 {
+  static int mode(List<Integer> a)
+  {
+    int maxValue = 0, maxCount = 0, x, y;
+    int n = a.size();
+    for(x = 0; x < n; x++)
+    {
+      int count = 0;
+      for(y = 0; y < n; y++)
+      {
+        if (a.get(y) == a.get(x))
+        {
+          count++;
+        }
+      }
+      if (count > maxCount)
+      {
+        maxCount = count;
+        maxValue = a.get(x);
+      }
+    }
+    return maxValue;
+  }
   public static void main(String[] args)
   {
     /**
@@ -27,6 +49,17 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    int numInput = in.nextInt();
+    List<Integer> lista = new ArrayList<Integer>();
+
+    for(int i = numInput; i > 0; i--)
+    {
+      Scanner input = new Scanner(System.in);
+      int number = input.nextInt();
+      lista.add(number);
+    }
+
+    System.out.println(mode(lista));
     
   }
 }
