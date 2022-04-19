@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Math;
+import java.lang.Math;
 
 public class Question2
 {
@@ -19,6 +19,6 @@ public class Question2
     
     bmi = weight / Math.pow(height/100,2);
     System.out.println(bmi);
-    
+
   }
 }
