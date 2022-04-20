@@ -12,10 +12,9 @@ public class Question2
      */
      
     double height, weight, bmi;
-    Scanner objOne = new Scanner (System.in);
-    weight = objOne.nextDouble();
-    Scanner objTwo = new Scanner(System.in);
-    height = objTwo.nextDouble();
+    Scanner in = new Scanner(System.in);
+    weight = in.nextDouble();
+    height = in.nextDouble();
     
     bmi = weight / Math.pow(height/100,2);
     System.out.println(bmi);
