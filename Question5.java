@@ -52,7 +52,7 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     int numInput = in.nextInt();
-    List<Integer> lista = new ArrayList<Integer>();
+    ArrayList<Integer> lista = new List<>();
 
     for(int i = numInput; i > 0; i--)
     {
