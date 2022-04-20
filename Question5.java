@@ -1,6 +1,4 @@
-import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 public class Question5
 {
