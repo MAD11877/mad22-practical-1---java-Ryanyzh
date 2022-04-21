@@ -1,7 +1,11 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Question5
 {
+  /*
   static int mode(List<Integer> a)
   {
     int maxValue = 0, maxCount = 0, x, y;
@@ -24,6 +28,7 @@ public class Question5
     }
     return maxValue;
   }
+  */
   public static void main(String[] args)
   {
     /**
@@ -59,7 +64,26 @@ public class Question5
       lista.add(number);
     }
 
-    System.out.println(mode(lista));
+    int maxValue = 0, maxCount = 0, x, y;
+    int n = lista.size();
+    for(x = 0; x < n; x++)
+    {
+      int count = 0;
+      for(y = 0; y < n; y++)
+      {
+        if (lista.get(y) == lista.get(x))
+        {
+          count++;
+        }
+      }
+      if (count > maxCount)
+      {
+        maxCount = count;
+        maxValue = lista.get(x);
+      }
+    }
+
+    System.out.println(maxValue);
     
   }
 }
