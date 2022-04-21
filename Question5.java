@@ -2,15 +2,15 @@ import java.util.*;
 
 public class Question5 {
   public static void main(String[] args) {
-  	Scanner objOne = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("");
+  	Scanner objOne = new Scanner(System.in);  
+    //System.out.println("");
     int numInput = objOne.nextInt();  
     ArrayList<Integer> lista = new ArrayList<Integer>();
     
     for (int i = 0; i < numInput; i++)
     {
-        Scanner objTwo = new Scanner(System.in);  // Create a Scanner object
-        System.out.println("");
+        Scanner objTwo = new Scanner(System.in);  
+        //System.out.println("");
         int number = objTwo.nextInt();  
         lista.add(number);
     }
