@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class Question5
+public class Main
 {
   /*
   static int mode(List<Integer> a)
@@ -55,9 +55,9 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     int numInput = in.nextInt();
-    List<Integer> lista = new ArrayList<Integer>();
+    ArrayList<Integer> lista = new ArrayList<Integer>();
 
-    for(int i = numInput; i > 0; i--)
+    for(int i = 0; i < numInput; i++)
     {
       Scanner input = new Scanner(System.in);
       int number = input.nextInt();
@@ -81,6 +81,7 @@ public class Question5
         maxCount = count;
         maxValue = lista.get(x);
       }
+      count = 0;
     }
 
     System.out.println(maxValue);
