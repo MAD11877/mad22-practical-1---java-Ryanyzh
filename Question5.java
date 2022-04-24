@@ -2,16 +2,16 @@ import java.util.*;
 
 public class Question5 {
   public static void main(String[] args) {
-  	Scanner objOne = new Scanner(System.in);  
+  	Scanner in = new Scanner(System.in);  
     //System.out.println("");
-    int numInput = objOne.nextInt();  
-    ArrayList<Integer> lista = new ArrayList<Integer>();
+    int numInput = in.nextInt();  
+    List<Integer> lista = new ArrayList<Integer>();
     
     for (int i = 0; i < numInput; i++)
     {
-        Scanner objTwo = new Scanner(System.in);  
+        //Scanner objTwo = new Scanner(System.in);  
         //System.out.println("");
-        int number = objTwo.nextInt();  
+        int number = in.nextInt();  
         lista.add(number);
     }
     
@@ -23,7 +23,7 @@ public class Question5 {
       int count = 0;
       for(y = 0; y < n; y++)
       {
-        if (lista.get(y) == lista.get(x))
+        if (lista.get(x) == lista.get(y))
         {
           count++;
         }
